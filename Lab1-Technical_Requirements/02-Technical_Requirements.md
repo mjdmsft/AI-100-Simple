@@ -1,28 +1,16 @@
 # Lab 1: Meeting the Technical Requirements
 
-## Setting technology, environments and keys
-
-This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. To ensure you have time to work through the exercises, there are certain requirements to meet before starting the labs for this course.
-
-You should ideally have some previous exposure to Visual Studio. We will be using it for everything we are building in the labs, so you should be familiar with [how to use it](https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide) to create applications. Additionally, this is not a class where we teach code or development. We assume you have some familiarity with C# (intermediate level - you can learn [here](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949) and [here](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/)).
-
-### Account Setup
-
-> **Note** You can use different environments for completing this lab.  Your instructor will guide you through the necessary steps to get the environment up and running.   This could be as simple as using the computer you are logged into in the classroom or as complex as setting up a virtualized environment.  The labs were created and tested using the Azure Data Science Virtual Machine (DSVM) on Azure and as such, will require an Azure account to use.
-
 ### Setup your Azure Account
 
-You may activate an Azure free trial at [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/).
-
-If you have been given an Azure Pass to complete this lab, you may go to [http://www.microsoftazurepass.com/](http://www.microsoftazurepass.com/) to activate it.  Please follow the instructions at [https://www.microsoftazurepass.com/howto](https://www.microsoftazurepass.com/howto), which document the activation process.  A Microsoft account may have **one free trial** on Azure and one Azure Pass associated with it, so if you have already activated an Azure Pass on your Microsoft account, you will need to use the free trial or use another Microsoft account.
+By now, you should have activated your Azure Pass with a personal Outlook account (NOT your work email). If you haven't done so yet, find the instructions at [https://www.microsoftazurepass.com/howto](https://www.microsoftazurepass.com/howto).
 
 ### Environment Setup
 
-These labs are intended to be used with the .NET Framework using [Visual Studio 2019](https://www.visualstudio.com/downloads/) runnning on a Microsoft Windows operating system. While there is a version of Visual Studio for Mac OS, certain features in the sample code are not supported on the Mac OS platform.  As a result, there is a hosted lab option available using a virtual machine solution. Your instructor will have the details on using the VM solution.  The original workshop was designed to be used, and was tested with, the Azure Data Science Virtual Machine (DSVM).  Only premium Azure subscriptions can actually create a DSVM resource on Azure but the labs can be completed with a local computer running Visual Studio 2019 and the required software downloads listed throughout the lab steps.
+These labs are intended to be used with the .NET Framework using Visual Studio 2019. This environment is prepared for you on your Lab VM as described by your instructor. Do not try to do these labs on your local device since you may not have the right requirements. Do all labs on your Lab VM which you can access through [esi.learnondemand.net](https://esi.learnondemand.net/User/Login?ReturnUrl=%2f).
 
 ### Urls and Keys Needed
 
-Over the course of this lab, we will collect a variety of Cognitive Services keys and storage keys. You should save all of them in a text file so you can easily access them in future labs. Not all of these will be populated in this lab.
+Over the course of this lab, we will collect multiple Cognitive Services keys and storage keys. You should save all of them in a text file so you can easily access them in future labs. Make sure you are working in your Lab VM. Open a notepad and create a file with the following content. We will get the keys in later steps.
 
 >_Keys_
 >
@@ -55,13 +43,13 @@ While the first lab focuses on the [Computer Vision](https://www.microsoft.com/c
 
     > **Note** Again to reiterate, you can create specific cognitive services resources or you can create a single resource that contains all the endpoints.
 
-1. Type a name of your own choosing
+1. Select your subscription and resource group, these should be in your Azure Pass subscription.
 
-1. Select your subscription and resource group
+1. Type a name of your own choosing
 
 1. For the pricing tier, select **S0**
 
-1. Check the confirmation checkbox
+1. Check the two confirmation checkboxes
 
     >[!Note]
     >Microsoft updates the Azure portal and services on a regular basis.  These steps contained the appropriate items at the time of writing but options and dialogs may 
